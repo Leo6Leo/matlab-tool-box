@@ -1,0 +1,23 @@
+function y = reduced()
+
+a = input("请输入需要化简的行列式: ")
+cont = 0;
+while cont~3
+    
+    choice = input("操作指令：1是reduced, 2是求rank,3是退出程序")
+
+    if choice == 1
+        disp("化简为Reduced echelon form，操作执行")
+        y = rref(a)
+        choice = input("继续操作：1是reduced, 2是求rank,3是退出程序")
+    else
+        disp("求rank,操作执行")
+        y= "他的rank是：" + rank(a)
+        choice = input("继续操作：1是reduced, 2是求rank,3是退出程序")
+    end
+    if cont ~= 0
+        disp("退出程序")
+    end
+end
+end
+
